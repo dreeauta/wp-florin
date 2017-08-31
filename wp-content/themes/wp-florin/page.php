@@ -1,13 +1,17 @@
 <?php get_header()?>
+<?php get_sidebar()?>
 
-<div>
-  <?php while(have_posts()):?>
+
+<div id ="left">
+  
+  <?php while ( have_posts() ) : the_post(); ?>
+    
     <h2> <?php the_title()?></h2>
-    <?php the_content();?>
+    <?php the_content(__('Continue_Reading'));?>
     
   <?php endwhile;?>
   
 </div>
 
+
 <?php get_footer()?>
-<?php get_sidebar()?>
