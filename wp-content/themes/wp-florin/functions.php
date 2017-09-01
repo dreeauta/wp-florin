@@ -17,3 +17,32 @@ register_sidebar(array(
   'after_widget' => '</div>'
   
 ));
+
+
+
+/*========================
+Custom Post type 
+======================= */
+
+function product_post_type() {
+  register_post_type('products', 
+  array(
+    'labels' => array(
+      'name' => __('Products'),
+      'singular_name' => __('Product'),
+    ),
+    'public' => true,
+    'has_archive' => true,
+    'rewrite' => array('slug' => 'products'),
+    )
+  );
+}
+add_action('init', 'product_post_type');
+
+
+
+
+
+
+
+
