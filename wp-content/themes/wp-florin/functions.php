@@ -24,6 +24,7 @@ register_sidebar(array(
 Custom Post type 
 ======================= */
 
+/*
 function product_post_type() {
   register_post_type('products', 
   array(
@@ -37,7 +38,7 @@ function product_post_type() {
     )
   );
 }
-add_action('init', 'product_post_type');
+add_action('init', 'product_post_type'); */
 
 
 
