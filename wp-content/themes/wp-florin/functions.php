@@ -104,7 +104,7 @@ function wp_florin_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'wp-florin' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'wp-florin' ),
+		'description'   => 'My custom sidebar',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -155,4 +155,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
