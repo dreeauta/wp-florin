@@ -25,6 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-florin' ); ?></a>
 
 	<header id="masthead" class="site-header">
+		
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -35,9 +36,9 @@
 			<?php
 			endif;
 
-			$description = get_bloginfo( 'description', 'display' );
+			 $description = get_bloginfo( 'description', 'display' );
 			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+				<p class="site-description"><?php echo $description;  ?></p>
 			<?php
 			endif; ?>
 		</div><!-- .site-branding -->
@@ -51,6 +52,12 @@
 				) );
 			?>
 		</nav><!-- #site-navigation -->
+		
+		<?php $header_image = get_header_image();
+        if ( ! empty( $header_image ) ) { ?>
+                <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
+<?php } // if ( ! empty( $header_image ) )
+?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
