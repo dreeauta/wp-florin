@@ -42,6 +42,13 @@ if ( ! function_exists( 'wp_florin_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		add_filter( 'post_thumbnail_html', 'my_post_image_html', 10, 3 );
+function my_post_image_html( $html, $post_id, $post_image_id ) {
+    $html = '<a href="' . get_permalink( $post_id ) . '" title="' .
+        esc_attr( get_post_field( 'post_title', $post_id ) ) . '">' . $html . '</a>';
+    return $html;
+}
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'wp-florin' ),

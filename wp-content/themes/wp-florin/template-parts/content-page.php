@@ -10,16 +10,16 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<header class="entry-header single-page">
+		<?php the_title( '<h1 class="entry-title single-page">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content single-page">
 		<?php
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp-florin' ),
+				'before' => '<div class="page-links single-page">' . esc_html__( 'Pages:', 'wp-florin' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -28,7 +28,7 @@
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php
-	
+
 			?>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
