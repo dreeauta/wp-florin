@@ -16,6 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>
@@ -25,7 +26,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-florin' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		
+
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -52,10 +53,10 @@
 				) );
 			?>
 		</nav><!-- #site-navigation -->
-		
+
 		<?php $header_image = get_header_image();
         if ( ! empty( $header_image ) ) { ?>
-                <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
+                <img class="header-img" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
 <?php } // if ( ! empty( $header_image ) )
 ?>
 	</header><!-- #masthead -->
