@@ -26,7 +26,6 @@
 		endif;
 
 
-
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php wp_florin_posted_on(); ?>

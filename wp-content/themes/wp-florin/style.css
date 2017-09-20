@@ -864,6 +864,7 @@ object {
 	width: 100%;
 	height: 60px;
 	font-family: 'Roboto Condensed', sans-serif;
+
 	letter-spacing: .2em;
 }
 
@@ -912,6 +913,7 @@ object {
 	left: 30px;
 }
 
+
 .header-img {
 	height: 550px;
 	width: 100%;
@@ -938,7 +940,7 @@ object {
 	border: 2px solid black;*/
 	margin: 30px 10px;
 	background-color: rgba(0,0,0,0.7);
-	height: 400px;
+	height: 450px;
 }
 
 .entry-header img {
@@ -949,6 +951,7 @@ object {
 
 h2.entry-title {
 	margin: 10px 0 5px 10px;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 .entry-title a {
@@ -970,6 +973,7 @@ h2.entry-title {
 	color: lightgray;
 	height: 40px;
 	width: 90%;
+
 }
 
 .price {
@@ -1033,10 +1037,11 @@ h2.entry-title {
 	}
 
 
-/*form */
+/*search bar */
 
-.astm-search-menu.default form {
-	position: relative;
-	bottom: 50px;
-	left: 250px;
+
+.astm-search-menu {
+	float: right !important;
+  margin-top: 15px;
+	margin-right:20px;
 }
