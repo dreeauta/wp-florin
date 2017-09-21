@@ -116,7 +116,7 @@ function wp_florin_widgets_init() {
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
-	) );
+	));
 }
 add_action( 'widgets_init', 'wp_florin_widgets_init' );
 
