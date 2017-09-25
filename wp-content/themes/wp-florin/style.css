@@ -898,7 +898,17 @@ object {
 	border: 0;
 }
 
+#menu-item-108 .sub-menu
+{
+	margin-left: 80px;
+  width: 90%;
+}
 
+
+.main-navigation ul ul a {
+	margin-left: 15px;
+	font-size: 12px;
+}
 
 .main-navigation ul ul {
 	top: 90%;
