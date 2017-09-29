@@ -946,6 +946,7 @@ object {
 /*homepage entry section*/
 
 .type-post {
+	position: relative;
 	display: inline-block;
 	width: 30%;
 	vertical-align:top;
@@ -990,16 +991,18 @@ h2.entry-title {
 }
 
 .price {
+	position: absolute;
+	bottom: 115px;
 	width: 20%;
 	display: inline-block;
 	color: white;
-	/*width: 30%;
-	float: left;
 	padding-top: 5px;*/
 }
 
 
 .buy-now-link  {
+	position: absolute;
+	bottom: 65px;
 	text-decoration: none;
 	color: white;
 	/*border: 2px solid orange;*/
@@ -1026,6 +1029,12 @@ h2.entry-title {
 	border: 2px solid #FF4500;
 }
 
+
+.addtoany_content_bottom {
+	position: absolute;
+	bottom: 5px;
+}
+
 .addtoany_content_bottom a:hover{
 	background-color: transparent;
 }
@@ -1033,6 +1042,15 @@ h2.entry-title {
 /*single page styling*/
 .single .featured-image {
 	display: none;
+}
+
+
+/*e-mail sign up form field */
+
+#subscriber_widget-2 {
+	margin: auto;
+	width: 50%;
+	padding-bottom: 50px;
 }
 
 
