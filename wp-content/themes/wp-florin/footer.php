@@ -16,7 +16,14 @@
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 
-			Buy stuff
+			<div id="footer-sidebar1">
+				<span> Follow Us </span> 
+				<?php
+					if(is_active_sidebar('footer-1')){
+					dynamic_sidebar('footer-1');
+					}
+					?>
+				</div>
 
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
