@@ -14,6 +14,16 @@
 
 get_header(); ?>
 
+<nav id="filter-navigation" class="filter-navigation">
+	<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'wp-florin' ); ?></button>
+	<?php
+		wp_nav_menu( array(
+			'theme_location' => 'menu-2',
+			'menu_id'        => 'secondary-menu',
+		) );
+	?>
+</nav>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -23,13 +33,14 @@ get_header(); ?>
 			if ( is_home() && ! is_front_page() ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					
+
 				</header>
-				
+
+
 
 			<?php
 			endif;
-			
+
 
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
@@ -50,7 +61,7 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-		
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

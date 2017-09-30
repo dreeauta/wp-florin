@@ -54,6 +54,11 @@ function my_post_image_html( $html, $post_id, $post_image_id ) {
 			'menu-1' => esc_html__( 'Primary', 'wp-florin' ),
 		) );
 
+		register_nav_menus( array(
+			'menu-2' => esc_html__( 'Secondary', 'wp-florin' ),
+		) );
+
+
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
