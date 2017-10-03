@@ -878,7 +878,7 @@ object {
 }
 
 .menu-item a:hover {
-	color: #FF4500;
+	color: rgb(227, 107, 92);
 }
 
 
@@ -890,13 +890,13 @@ object {
 
 .sub-menu {
 	/*background-color: rgba(0,0,0,0.7);*/
-	background-color: rgba(78, 187, 178, .7);
+	background-color: rgba(78, 187, 178, .8);
 	color: lightgray;
 	margin: 0;
 }
 
 .sub-menu a:hover {
-	color: #FF4500;
+	color: rgb(227, 107, 92);
 	border: 0;
 }
 
@@ -923,6 +923,15 @@ object {
 	position: absolute;
 	top: 10px;
 	left: 30px;
+}
+
+
+/*search bar */
+
+input[type="submit"] {
+	color: white;
+	font-size: 14px;
+	background-color: #bbb;
 }
 
 
@@ -971,7 +980,8 @@ object {
 	/*padding: 10px 30px 30px 30px;
 	border: 2px solid black;*/
 	margin: 30px 10px;
-	background-color: rgba(78, 187, 178, .7);
+	/*background-color: rgba(78, 187, 178, .8);*/
+	background-color: rgba(103, 154, 146, .9);
 	height: 450px;
 }
 
@@ -993,7 +1003,7 @@ h2.entry-title {
 }
 
 .entry-title a:hover {
-	color: #FF4500;
+	color: rgb(227, 107, 92);
 }
 
 .entry-content {
@@ -1023,13 +1033,13 @@ h2.entry-title {
 	bottom: 65px;
 	text-decoration: none;
 	color: white;
-	/*border: 2px solid orange;*/
 	padding: 10px 50px;
 	border-radius: 6px;
 	text-transform: capitalize;
 	font-size: 12px;
 	font-weight: 500;
-	background-color: #FF4500;
+	background-color: rgb(227, 107, 92);
+	transition: background-color .3s ease-in-out;
 }
 
 /*.buy-now-link:hover {
@@ -1043,8 +1053,8 @@ h2.entry-title {
 }
 
 .entry-content a:hover {
-	background-color: #FF4500;
-	border: 2px solid #FF4500;
+	background-color: rgb(250, 115, 100);
+	/*border: 2px solid #E36B5C;*/
 }
 
 
