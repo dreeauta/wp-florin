@@ -981,7 +981,7 @@ input[type="submit"] {
 	border: 2px solid black;*/
 	margin: 30px 10px;
 	/*background-color: rgba(78, 187, 178, .8);*/
-	background-color: rgba(103, 154, 146, .9);
+	border: 2px solid rgba(78, 187, 178, .8);
 	height: 450px;
 }
 
@@ -992,13 +992,14 @@ input[type="submit"] {
 
 
 h2.entry-title {
-	margin: 10px 0 5px 10px;
+	margin: 10px 0 5px 15px;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
 .entry-title a {
 	text-decoration: none;
-	color: white;
+	/*color: white;*/
+	color: rgb(78, 187, 178);
 	text-transform: capitalize;
 }
 
@@ -1012,7 +1013,7 @@ h2.entry-title {
 
 .entry-content p {
 	font-size: 10px;
-	color: white;
+	/*color: white;*/
 	height: 40px;
 	width: 90%;
 
@@ -1023,7 +1024,6 @@ h2.entry-title {
 	bottom: 115px;
 	width: 20%;
 	display: inline-block;
-	color: white;
 	padding-top: 5px;*/
 }
 
