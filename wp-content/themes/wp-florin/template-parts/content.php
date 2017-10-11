@@ -13,8 +13,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		
-
 
 		<?php if ( has_post_thumbnail() ) {
 		 the_post_thumbnail();
@@ -37,6 +35,8 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+
+
 
 		<?php
 			the_content( sprintf(
