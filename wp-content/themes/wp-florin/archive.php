@@ -11,6 +11,16 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+			
+			<nav id="filter-navigation" class="filter-navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'wp-florin' ); ?></button>
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-2',
+						'menu_id'        => 'secondary-menu',
+					) );
+				?>
+			</nav>
 
 		<?php
 		if ( have_posts() ) : ?>

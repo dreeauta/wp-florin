@@ -16,7 +16,7 @@
 
 		<?php if ( has_post_thumbnail() ) {
 		 the_post_thumbnail();
-	 }; ?>
+	 		}; ?>
 
 		<?php
 		if ( is_singular() ) :
@@ -27,6 +27,8 @@
 
 
 		if ( 'post' === get_post_type() ) : ?>
+		
+	 
 		<div class="entry-meta">
 			<?php wp_florin_posted_on(); ?>
 		</div><!-- .entry-meta -->

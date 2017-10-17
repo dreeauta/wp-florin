@@ -14,6 +14,8 @@
 
 get_header(); ?>
 
+<?php post_carousel_id('189'); ?>
+
 <nav id="filter-navigation" class="filter-navigation">
 	<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'wp-florin' ); ?></button>
 	<?php

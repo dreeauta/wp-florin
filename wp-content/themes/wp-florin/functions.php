@@ -141,6 +141,8 @@ function wp_florin_scripts() {
 	wp_enqueue_style( 'wp-florin-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'wp-florin-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	
+	wp_enqueue_style( 'wp-florin-style-posts', get_template_directory_uri() . '/posts.css', array(), '20120206', true );
 
 	wp_enqueue_script( 'wp-florin-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -176,3 +178,13 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+// remove category:  
+
+add_filter( 'get_the_archive_title', function ( $title ) {
+    if( is_category() ) {
+        $title = single_cat_title( '', false );
+    }
+    return $title;
+});
