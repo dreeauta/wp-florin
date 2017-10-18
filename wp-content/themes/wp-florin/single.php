@@ -9,6 +9,9 @@
 
 get_header(); ?>
 
+<?php post_carousel_id('179'); ?>
+
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 

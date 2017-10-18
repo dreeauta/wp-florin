@@ -9,9 +9,12 @@
 
 get_header(); ?>
 
+<?php post_carousel_id('179'); ?>
+
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			
+
 			<nav id="filter-navigation" class="filter-navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'wp-florin' ); ?></button>
 				<?php
