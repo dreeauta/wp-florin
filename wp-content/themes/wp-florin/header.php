@@ -45,7 +45,7 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		
+
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'wp-florin' ); ?></button>
@@ -57,11 +57,11 @@
 			?>
 		</nav><!-- #site-navigation -->
 
-		<!-- <?php $header_image = get_header_image();
+		<?php $header_image = get_header_image();
         if ( ! empty( $header_image ) ) { ?>
                 <img class="header-img" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
 <?php }
-?> -->
+?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
