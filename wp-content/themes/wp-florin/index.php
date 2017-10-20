@@ -14,6 +14,12 @@
 
 get_header(); ?>
 
+<div class="top-ad">
+<?php the_ad(141); ?>
+<?php the_ad(192); ?>
+<?php the_ad(192); ?>
+</div>
+
 <?php post_carousel_id('179'); ?>
 
 <nav id="filter-navigation" class="filter-navigation">

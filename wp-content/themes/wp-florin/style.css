@@ -569,14 +569,13 @@ a:hover, a:active {
 	width: 20px;
 
 }
-
-
 	.menu-toggle {
 		display: none;
 	}
 	.main-navigation ul {
 		display: block;
 	}
+
 
 
 .site-main .comment-navigation, .site-main
@@ -855,8 +854,7 @@ object {
 	border: 0;
 }
 
-#menu-item-108 .sub-menu
-{
+#menu-item-108 .sub-menu {
 	margin-left: 80px;
   width: 90%;
 }
@@ -902,6 +900,14 @@ input[type="submit"] {
 	margin: auto;
 	/*padding-top: 30px;*/
 	padding-bottom: 100px;
+}
+
+
+/*ad */
+
+.top-ad {
+	width: 80%;
+	margin: auto;
 }
 
 /*carousel*/
@@ -1177,6 +1183,7 @@ div.norm_row sfsi_wDiv {
 
 .single-post .entry-header img {
 	height: 400px;
+	width: 500px;
 }
 
 .single-post .entry-title {
@@ -1209,18 +1216,71 @@ div.norm_row sfsi_wDiv {
 		top: 60%;
 }
 
+/*related posts*/
+
+#related_posts {
+	margin-top: 100px;
+}
+
+#related_posts h3 {
+	display: inline-block;
+	padding-left: 100px;
+}
+
+#related_posts ul{
+	list-style-type: none;
+
+}
+
+#related_posts img {
+	width: 300px;
+	height: 250px;
+}
+
 
 @media only screen and (max-width: 750px) {
 
-	#primary-menu {
-		font-size: 10px;
-	}
-	.menu-item a {
-    margin: 20px 0 20px 20px;
+	.menu-toggle {
+		display: none;
 	}
 
-.menu-item a.menu-image-title-after.menu-image-not-hovered img{
-	display: none;
+	.main-navigation ul li {
+		float: none;
+		width: 100%;
+	}
+
+	.menu-toggle {display: none;}
+	.main-navigation ul {display: block;}
+
+	.main-navigation ul li {float: none;}
+
+	#primary-menu {
+		font-size: 10px;
+		height: 110px;
+		padding-top: 10px;
+	}
+
+	#secondary-menu {
+		display: none;
+	}
+
+
+	.menu-item a {
+    margin: 0px 0 20px 20px;
+	}
+
+	.top-ad {
+		width: 60%;
+		margin: auto;
+	}
+
+
+	.menu-item a.menu-image-title-after.menu-image-not-hovered img{
+		display: none;
+		}
+
+	ul .sub-menu {
+		display: none;
 	}
 
 
@@ -1245,6 +1305,11 @@ div.norm_row sfsi_wDiv {
 
 	.search-form	.search-field {
 		max-width: 50vw;
+	}
+
+	.astm-search-menu {
+    margin-right: -90px;
+    margin-bottom: 40px;
 	}
 
 	#subscriber_widget-2 {
@@ -1276,6 +1341,11 @@ div.norm_row sfsi_wDiv {
 }
 
 @media screen and (max-width: 1000px) and (min-width: 760px) {
+	.top-ad {
+		width: 90%;
+		margin: auto;
+	}
+
 	.menu-item a {
 		margin: 20px 0 20px 60px;
 		font-size: 12px;
