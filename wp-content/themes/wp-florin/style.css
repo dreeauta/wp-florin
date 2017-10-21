@@ -812,9 +812,33 @@ object {
 
 /*nav menu*/
 
+.site-logo {
+	text-align: center;
+	height: 70px;
+	font-size: 40px;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: black;
+	color: white;
+	padding-top: 10px;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.site-logo span{
+	border-bottom: 1px solid white;
+	animation: 3s ease-out 2s 1 slideInFromLeft;
+}
+
 .nav-menu {
 	background-color: rgba(0,0,0, 1);
-	position: fixed;
+	/*position: fixed;*/
 	/*background-color: #4EBBB2;*/
 	width: 100%;
 	height: 65px;
@@ -855,8 +879,8 @@ object {
 }
 
 #menu-item-108 .sub-menu {
-	margin-left: 80px;
-  width: 90%;
+	margin-left: 50px;
+	width: 130%;
 }
 
 
@@ -898,7 +922,7 @@ input[type="submit"] {
 .site-main {
 	width: 90%;
 	margin: auto;
-	/*padding-top: 30px;*/
+	padding-top: 40px;
 	padding-bottom: 100px;
 }
 
@@ -912,13 +936,22 @@ input[type="submit"] {
 
 }
 
+.top-ad img {
+	width: 250px;
+	margin-left: 20px;
+}
+
 /*carousel*/
 
-div.sp-post-carousel-section-179 {
+div.sp-post-carousel-section-189 {
 	width: 80%;
 	margin: auto;
 	padding-top: 75px !important;
 
+}
+
+div.sp-post-carousel-section-189 img {
+	height: 200px;
 }
 
 
@@ -928,20 +961,22 @@ div.sp-post-carousel-section-179 {
 
 #secondary-menu {
 	margin-bottom: 80px;
-	border-bottom: 2px solid black;
+	/*border-bottom: 2px solid black;
+	border-top: 1px solid black;*/
 	padding-bottom: 20px;
-	border-top: 1px solid black;
 	margin-top: 30px;
-	background-color:black;
 }
 
 #secondary-menu a {
+	color: white;
 	padding: 20px 30px;
+	background-color: rgb(227, 107, 92);
 }
 
 #secondary-menu a:hover {
-	background-color: orange;
-	color: white;
+	background-color: white;
+	color: rgb(227, 107, 92);
+	border: 2px solid rgb(227, 107, 92);
 }
 
 #secondary-menu .menu-item a {
@@ -1071,6 +1106,10 @@ content: "\02026";
 	text-decoration: none;
 }
 
+.home .entry-content .gallery-item, .archive .entry-content .gallery-item, #related_posts .gallery-item {
+	display: none;
+}
+
 
 
 /*social share links*/
@@ -1114,6 +1153,7 @@ content: "\02026";
 	background-color: rgba(0,0,0, .7);
 	height: 180px;
 }
+
 
 /*.widget-area {
 	text-align: center;
@@ -1192,11 +1232,11 @@ div.norm_row sfsi_wDiv {
 	float: right;
 }
 
-.single-post .entry-content {
+.single-post .product-content {
 	display: inline-block;
 	position: absolute;
 	left: 60%;
-	top: 15%;
+	top: 30%;
 }
 
 .single-post .buy-now-link  {
@@ -1220,8 +1260,12 @@ div.norm_row sfsi_wDiv {
 
 /*related posts*/
 
+
+
 #related_posts {
-	margin-top: 100px;
+	padding-top: 100px;
+	width: 80%;
+	margin: auto;
 }
 
 #related_posts ul {
@@ -1230,12 +1274,19 @@ div.norm_row sfsi_wDiv {
 
 #related_posts h3 {
 	display: inline-block;
-	padding-left: 50px;
+}
+
+#related_posts h3 a {
+	text-decoration: none;
 }
 
 #related_posts ul{
 	list-style-type: none;
+}
 
+#related_posts li {
+	margin-left: 20px;
+	display: inline-block;
 }
 
 #related_posts img {
@@ -1246,19 +1297,27 @@ div.norm_row sfsi_wDiv {
 
 @media only screen and (max-width: 750px) {
 
+
 	.menu-toggle {
 		display: none;
 	}
 
-	.main-navigation ul li {
+	.main-navigation ul .menu-item{
 		float: none;
-		width: 100%;
+		display: inline-block;
 	}
 
-	.menu-toggle {display: none;}
+	/*.menu-toggle {display: none;}
 	.main-navigation ul {display: block;}
 
-	.main-navigation ul li {float: none;}
+	.main-navigation ul li {float: none;}*/
+
+	.site-logo {
+		padding-left: 25px;
+		text-align: left;
+		font-size: 25px;
+		padding-top: 20px;
+	}
 
 	#primary-menu {
 		font-size: 10px;
@@ -1274,6 +1333,20 @@ div.norm_row sfsi_wDiv {
 	.menu-item a {
     margin: 0px 0 20px 20px;
 	}
+
+	.astm-search-menu {
+		position: absolute;
+		left: 30px;
+	}
+
+	.search-form {
+		display: block;
+	}
+
+	.search-field {
+		width: 50%;
+	}
+
 
 	.top-ad {
 		width: 60%;
@@ -1309,14 +1382,6 @@ div.norm_row sfsi_wDiv {
 		height: 250px;
 	}
 
-	.search-form	.search-field {
-		max-width: 50vw;
-	}
-
-	.astm-search-menu {
-    margin-right: -90px;
-    margin-bottom: 40px;
-	}
 
 	#subscriber_widget-2 {
 		width: 70%;
@@ -1326,9 +1391,6 @@ div.norm_row sfsi_wDiv {
 		margin-right: 160px;
 	}
 
-	#footer-sidebar1 #sfsi-widget-2 {
-		margin-top: 15px;
-	}
 
 	.single-post .entry-title {
 		display: block;
@@ -1336,7 +1398,7 @@ div.norm_row sfsi_wDiv {
 		float: none;
 	}
 
-	.single-post .entry-content {
+	.single-post .product-content {
 		display: block;
 		position: static;
 		}

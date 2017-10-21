@@ -66,6 +66,11 @@ get_header(); ?>
 			<li><div class="relatedthumb"><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a></div>
 			<div class="relatedcontent">
 			<h3><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
+			<?php
+			$content = get_the_content('');
+			print $content;
+			?>
+
 			</div>
 			</li>
 			<?
@@ -74,7 +79,9 @@ get_header(); ?>
 			}
 			}
 			$post = $orig_post;
-			wp_reset_query(); ?>
+			wp_reset_query();
+
+			?>
 
 
 		</main><!-- #main -->
