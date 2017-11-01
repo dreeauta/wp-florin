@@ -814,7 +814,7 @@ object {
 
 .site-logo {
 	text-align: center;
-	height: 70px;
+	height: 80px;
 	font-size: 40px;
 	background-color: rgb(227, 107, 92);
 	color: white;
@@ -869,7 +869,7 @@ object {
 	background-color: rgb(227, 107, 92);
 	/*background-color: rgba(78, 187, 178, .8);*/
 	color: lightgray;
-	margin: 0;
+	margin-left: 40px !important;
 }
 
 .sub-menu li:hover {
@@ -890,10 +890,6 @@ object {
 	font-size: 12px;
 }
 
-/*.main-navigation ul ul a {
-	margin-left: 15px;
-	font-size: 12px;
-}*/
 
 .main-navigation ul ul {
 	top: 90%;
@@ -971,6 +967,13 @@ div.sp-post-carousel-section {
 .sp-post-carousel-area .sp-pc-post-title a {
 	text-decoration: none;
 	padding-left: 10px;
+	transition: color .3s ease-in;
+
+}
+
+.sp-post-carousel-area .sp-pc-post-title a:hover {
+	color:rgb(227, 107, 92);
+
 }
 
 .sp-post-carousel-area img {
@@ -1010,6 +1013,8 @@ div.sp-post-carousel-section {
 	background-color: rgb(227, 107, 92);
 	letter-spacing: .075em;
 	transition: background-color .3s linear;
+	border-radius: 4px;
+
 }
 
 #secondary-menu a:hover {
@@ -1139,10 +1144,10 @@ transform: scale(1.05);
 	padding-left: 10px;
 }
 
-.home .entry-content p, .archive .entry-content p {
-	font-size: 11px;
+.home .product-content , .archive .product-content {
+	font-size: 12px;
 	color: black;
-	height: 40px;
+	height: 60px;
 	width: 80%;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -1151,7 +1156,7 @@ transform: scale(1.05);
 
 }
 
-.home .entry-content p:after{
+.home .product-content:after{
 content: "\02026";
 }
 
@@ -1242,24 +1247,26 @@ content: "\02026";
 	background-color: rgba(0,0,0, .7);
 }
 
-#footer-menu {
+.menu-footer-menu-container {
 	display: inline-block;
 	padding: 30px 0;
+
 }
 
-#footer-menu ul {
+
+.menu-footer-menu-container ul {
 	list-style-type: none;
 	margin: 0;
 	display: inline-block;
 	column-count: 2;
 }
 
-#footer-menu a {
+.menu-footer-menu-container a {
 	text-decoration: none;
 	color: white;
 }
 
-#footer-menu a:hover {
+.menu-footer-menu-container a:hover {
 	color: #FF4500;
 }
 
@@ -1390,13 +1397,13 @@ div.norm_row sfsi_wDiv {
 
 
 #related_posts {
-	padding-top: 100px;
+	padding-top: 200px;
 	margin: auto;
 }
 
 #related_posts ul {
 	margin: 0;
-	text-align: center;
+	/*text-align: center;*/
 	list-style-type: none;
 }
 
@@ -1418,7 +1425,6 @@ div.norm_row sfsi_wDiv {
 
 
 #related_posts li {
-	margin-left: 20px;
 	display: inline-block;
 }
 
@@ -1450,6 +1456,7 @@ div.norm_row sfsi_wDiv {
 		padding-left: 25px;
 		font-size: 30px;
 		padding-top: 20px;
+
 	}
 
 	#primary-menu {
@@ -1463,6 +1470,10 @@ div.norm_row sfsi_wDiv {
 		padding: 35px 0px;
 	}
 
+.page-info {
+	font-size: 20px;
+
+}
 
 
 	#secondary-menu {
@@ -1575,6 +1586,10 @@ div.norm_row sfsi_wDiv {
 
 	.single-post .buy-now-link {
 		padding: 10px 25px;
+	}
+
+	#related_posts ul {
+		text-align: center;
 	}
 
 }
