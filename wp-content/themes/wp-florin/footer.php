@@ -16,6 +16,16 @@
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 
+			<div class="site-logo"> <span>  Cool Gadgets Guru </span></div>
+
+
+			<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-3',
+					'menu_id'        => 'footer-menu',
+				) );
+			?>
+
 			<div id="footer-sidebar1">
 				<span> Follow Us </span>
 				<?php

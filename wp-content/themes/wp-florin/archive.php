@@ -9,10 +9,17 @@
 
 get_header(); ?>
 
-<div class="top-ad">
+<div class="top-ad-desktop">
 <?php the_ad(141); ?>
 <?php the_ad(192); ?>
 <?php the_ad(192); ?>
+</div>
+
+
+<div class="top-ad-small">
+	<?php the_ad(141); ?>
+	<?php the_ad(192); ?>
+
 </div>
 
 <?php post_carousel_id('179'); ?>

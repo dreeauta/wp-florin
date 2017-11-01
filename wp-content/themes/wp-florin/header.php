@@ -18,6 +18,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>
@@ -61,7 +62,10 @@
 
 		<?php $header_image = get_header_image();
         if ( ! empty( $header_image ) ) { ?>
-                <img class="header-img" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
+                <img class="header-img" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>"
+								height="<?php echo get_custom_header()->height; ?>" alt="" />
+
+
 <?php }
 ?>
 	</header><!-- #masthead -->

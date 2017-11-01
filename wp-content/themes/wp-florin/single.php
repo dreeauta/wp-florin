@@ -9,14 +9,19 @@
 
 get_header(); ?>
 
-<div class="top-ad">
+
+
+<div class="top-ad-desktop">
 <?php the_ad(141); ?>
 <?php the_ad(192); ?>
 <?php the_ad(192); ?>
 </div>
 
+<div class="top-ad-small">
+<?php the_ad(141); ?>
+</div>
 
-<?php post_carousel_id('179'); ?>
+
 
 
 	<div id="primary" class="content-area">
@@ -32,6 +37,15 @@ get_header(); ?>
 				?>
 			</nav>
 
+			<div class="ad-section-desktop">
+				<?php the_ad(192); ?>
+				<?php the_ad(192); ?>
+				<?php the_ad(192); ?>
+
+			</div>
+
+
+
 		<?php
 		while ( have_posts() ) : the_post();
 
@@ -45,6 +59,14 @@ get_header(); ?>
 
 		endwhile; // End of the loop.
 		?>
+
+		<div class="ad-section-small">
+			<?php the_ad(192); ?>
+
+
+		</div>
+
+
 
 					<?php $orig_post = $post;
 			global $post;
@@ -66,10 +88,7 @@ get_header(); ?>
 			<li><div class="relatedthumb"><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a></div>
 			<div class="relatedcontent">
 			<h3><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-			<?php
-			$content = get_the_content('');
-			print $content;
-			?>
+
 
 			</div>
 			</li>

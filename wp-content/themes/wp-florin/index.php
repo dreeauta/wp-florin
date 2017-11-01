@@ -14,16 +14,31 @@
 
 get_header(); ?>
 
+<div class="page-info-wrapper">
+	<!-- <div class="page-info-logo">
+		COOL GADGETS GURU
+	</div>
+-->
+	<div class="page-info">
+	This where you'll find cool and unique gift ideas.
+	You'll never give a boring gift again with our never ending list of amazing products.
+	</div>
+</div>
 
 <?php post_carousel_id('179'); ?>
 
 <?php post_carousel_id('189'); ?>
 
-<div class="top-ad">
+<div class="top-ad-desktop">
 <?php the_ad(141); ?>
 <?php the_ad(192); ?>
 <?php the_ad(192); ?>
 </div>
+
+<div class="top-ad-small">
+<?php the_ad(141); ?>
+</div>
+
 
 
 <nav id="filter-navigation" class="filter-navigation">
