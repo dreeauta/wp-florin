@@ -91,7 +91,16 @@ get_header(); ?>
 
 
 		</main><!-- #main -->
+
+		<div class="home side-ad-section-desktop">
+		<?php the_ad(141); ?>
+		<?php the_ad(192); ?>
+		<?php the_ad(192); ?>
+		</div>
 	</div><!-- #primary -->
+
+
+
 
 <?php
 get_sidebar();

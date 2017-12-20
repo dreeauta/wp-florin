@@ -37,7 +37,7 @@ get_header(); ?>
 				?>
 			</nav>
 
-			<div class="ad-section-desktop">
+			<div class="side-ad-section-desktop">
 				<?php the_ad(192); ?>
 				<?php the_ad(192); ?>
 				<?php the_ad(192); ?>
@@ -82,7 +82,7 @@ get_header(); ?>
 			);
 			$my_query = new wp_query( $args );
 			if( $my_query->have_posts() ) {
-			echo '<div id="related_posts"><h3>Related Posts</h3><ul>';
+			echo '<div id="related_posts"><h3>Related Items</h3><ul>';
 			while( $my_query->have_posts() ) {
 			$my_query->the_post();?>
 			<li><div class="relatedthumb"><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a></div>
