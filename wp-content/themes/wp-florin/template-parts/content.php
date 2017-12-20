@@ -19,16 +19,11 @@
 	 		}; ?>
 
 		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
 
 
 		if ( 'post' === get_post_type() ) : ?>
-		
-	 
+
+
 		<div class="entry-meta">
 			<?php wp_florin_posted_on(); ?>
 		</div><!-- .entry-meta -->
@@ -38,7 +33,14 @@
 
 	<div class="entry-content">
 
+  <?php
+	if ( is_singular() ) :
+		the_title( '<h1 class="entry-title">', '</h1>' );
+	else :
+		the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+	endif;
 
+	?>
 
 		<?php
 			the_content( sprintf(
@@ -64,7 +66,25 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+
+	</div>
+
+<div class="entry-content-images">
+		<?php $attachments = new Attachments( 'attachments' ); /* pass the instance name */ ?>
+			<?php if( $attachments->exist() ) : ?>
+				<ul>
+					<?php while( $attachments->get() ) : ?>
+						<li>
+							 <?php echo $attachments->image( 'thumbnail' ); ?><br />
+						</li>
+					<?php endwhile; ?>
+			</ul>
+			<?php endif; ?>
+
+	</div>
+
+
+	<!-- .entry-content -->
 
 
 

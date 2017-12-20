@@ -1019,9 +1019,7 @@ div.sp-post-carousel-section {
 
 #secondary-menu a:hover {
 	/*background-color: white;*/
-	background-color: #E3DCD4;
-	color:rgb(227, 107, 92);
-	border: 1px solid rgb(227, 107, 92);
+	background-color: rgba(227, 107, 92,0.7);
 }
 
 
@@ -1161,10 +1159,15 @@ content: "\02026";
 }
 
 .home .price, .archive .price {
-	color: black;
+	color: white;
+	padding: 10px 10px;
+	background-color: rgb(227, 107, 92);
+	font-size: 1.3em;
 	position: absolute;
-	right: 50px;
-	bottom: 136px;
+	right: 0;
+	top: 10px;
+	/*right: 50px;
+	top: 136px;*/
 	width: 20%;
 	display: inline-block;
 	padding-top: 5px;*/
@@ -1200,6 +1203,10 @@ content: "\02026";
 	display: none;
 }
 
+
+.home .entry-content-images {
+	display: none;
+}
 
 
 /*social share links*/
@@ -1266,9 +1273,10 @@ content: "\02026";
 	color: white;
 }
 
-.menu-footer-menu-container a:hover {
+.menu-footer-menu-container .menu-item a:hover {
 	color: #FF4500;
-}
+	border-bottom: 0;
+	}
 
 
 /*.widget-area {
@@ -1346,32 +1354,32 @@ div.norm_row sfsi_wDiv {
 }
 
 
-.single-post .entry-title {
-	font-size: 30px;
-	position: absolute;
-	left: 50%;
-	top: 10%;
-}
-
 .single-post .entry-header {
 	display: inline-block;
+	margin-left: 88px;
 }
 
 .single-post .entry-header img {
-	height: 400px;
 	width: 420px;
 }
 
-.single-post .entry-title {
-	float: right;
+
+.single-post .entry-content {
+	display: inline-block;
+	position: absolute;
+  top: 40px;
+  left: 50%;
+}
+
+.single-post h1 {
+	font-size: 30px;
+	display: inline;
 }
 
 .single-post .product-content {
-	display: inline-block;
-	position: absolute;
-	left: 50%;
-	top: 30%;
+	margin-top: 20px;
 }
+
 
 .single-post .buy-now-link  {
 	text-decoration: none;
@@ -1387,9 +1395,24 @@ div.norm_row sfsi_wDiv {
 
 .single-post .addtoany_share_save_container {
     width: 150px;
-    position: relative;
-    left: 0px;
-		top: 60%;
+    position:static;
+    /*left: 0px;
+		top: 60%;*/
+}
+
+.entry-content-images {
+	width: 70%;
+}
+
+.entry-content-images li {
+	list-style-type: none;
+	display: inline-block;
+	margin-top: 30px;
+}
+
+
+.entry-content-images ul img {
+	width: 420px;
 }
 
 /*related posts*/
@@ -1397,7 +1420,7 @@ div.norm_row sfsi_wDiv {
 
 
 #related_posts {
-	padding-top: 200px;
+	padding-top: 50px;
 	margin: auto;
 }
 
@@ -1523,9 +1546,20 @@ div.norm_row sfsi_wDiv {
 		display: none;
 		}
 
-	ul .sub-menu {
-		display: none;
+	.sub-menu {
+		margin-left: 0 !important;
 	}
+
+	#menu-item-108 .sub-menu {
+		margin-left: 0;
+	}
+
+
+
+	.sub-menu li a{
+		text-align: left;
+	}
+
 
 
 	.site-main {
